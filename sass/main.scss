@@ -1,7 +1,49 @@
+// Import Folder "Base"
+
 @import "./base/variables.scss";
 @import "./base/reset.scss";
-@import "./base/placeholders.scss";
-@import "./components/footer.scss";
+
+// Import Folder "Components"
+
 @import "./components/header.scss";
-@import "./home/home.scss";
-@import "./home/portfolio.scss";
+@import "./components/footer.scss";
+
+// Import Folder "Utils"
+
+@import "./utils/mixins.scss";
+@import "./utils/placeholders.scss";
+
+// Import Folder "Pages"
+
+@import "./pages/home.scss";
+@import "./pages/portfolio.scss";
+
+// Base Style
+
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 30px;
+    }
+    
+
+.portfolio-container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 30px;
+    }
+
+    
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+
+
+

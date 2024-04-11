@@ -1,26 +1,23 @@
-:root{
-    --color1:#2196F3;
-    --color2:#F5F4FA;
-    --color3:#ECECEC;
-    --color4:#FFFFFF;
-    --color5:#2F303A;
-    --color6:#000000;
-    --color7:#757575;
-    --color8:#212121;
-    --color9:#EEEEEE;
-}
+@import "../base/variables.scss";
+@import "../utils/mixins.scss";
 
-footer{
-
+.footer{
+    margin-top: 94px;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.42px; 
-}
-.footer-logo,
-.header-logo{
+        display: flex;
+        margin-top: 114px; 
+           background-color: #2F303A;
+    height: 261px; 
+       justify-content: space-around;
+    padding: 0 30px;
+    padding-top: 60px;
+    
+    &__logo{
    font-family: Roboto;
    font-size: 44px;
    font-style: normal;
@@ -29,22 +26,27 @@ footer{
    letter-spacing: 2.64px;
 }
 
-.footer{
-    margin-top: 94px;
+
+
+&__list-people{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
 }
-.footer-logo{
+
+&__logo{
     margin-top: 154px;
     margin-bottom:20px;
 }
-.footer-title-h3{
+&__h3{
     margin-bottom:9px; 
 }
-.footer{
+&{
     background-color: #2F303A;
     padding-top:60px;
     padding-bottom: 60px;
 }
-.footer-title-h4{
+&__h4{
     color: #FFF;
     font-family: Roboto;
     font-size: 14px;
@@ -54,12 +56,12 @@ footer{
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
-.footer-list{
+&__list{
     display: flex;
     gap: 10px;
     margin-top: 20px;
 }
-.footer-title-h3{
+&__h3{
     color: #FFF;
     font-family: Roboto;
     font-size: 14px;
@@ -70,101 +72,24 @@ footer{
 }
 
 
-.footer{
-    display: flex;
-    
-}
 
-.footer-div{
+&__div{
     background-color: #2F303A;
     margin-top: 1.2%;
 }
 
 
-footer{
 
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 171.429% */
-    letter-spacing: 0.42px; 
-}
-.portfolio-footer-logo,
- .portfolio-header-logo{
-    font-family: Roboto;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 60px; /* 136.364% */
-    letter-spacing: 2.64px;
 
- }
- 
-footer{
-    margin-top: 114px;
-}
-footer{
-    
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 171.429% */
-    letter-spacing: 0.42px; 
-}
-.portfolio-footer-logo,
-.portfolio-header-logo{
-   font-family: Roboto;
-   font-size: 44px;
-   font-style: normal;
-   font-weight: 900;
-   line-height: 60px; /* 136.364% */
-   letter-spacing: 2.64px;
-}
-.portfolio-footer{
-    padding-top: 94px;
-}
-.portfolio-footer-logo,
-.portfolio-header-logo{
-   font-family: Roboto;
-   font-size: 44px;
-   font-style: normal;
-   font-weight: 900;
-   line-height: 60px; /* 136.364% */
-   letter-spacing: 2.64px;
-}
-.portfolio-footer-title-h3{
-    margin-bottom:9px; 
-}
 
-.portfolio-footer{
-    padding-bottom:60px; 
-}
-.portfolio-footer-logo{
-    margin-top: 154px;
-    margin-bottom:20px;
-}
-.portfolio-footer{
-    background-color: #2F303A;
-}
-.footer-article{
+
+&__article{
     display: flex;
     flex-direction: column;
 }
 
-.footer{
-    background-color: #2F303A;
-    height: 261px;
 
-}
-.footer{
-    justify-content: space-around;
-    padding: 0 30px;
-    padding-top: 60px;
-}
-
-.footer-input{
+&__input{
     color: rgba(255, 255, 255, 0.60);
     font-family: Roboto;
     font-size: 16px;
@@ -183,7 +108,7 @@ footer{
     padding-right: 16px;
 }
 
-.footer-title-h6{
+&__h6{
     color: #FFF;
     font-family: Roboto;
     font-size: 14px;
@@ -195,7 +120,7 @@ footer{
     margin-bottom: 20px;
 }
 
-.footer-button{
+&__button{
     border-radius: 4px;
     background: #2196F3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -213,7 +138,7 @@ footer{
     margin-left: 12px;
 }
 
-.footer-button-img{
+&__button-img{
     width: 24px;
     height: 24px;
     flex-shrink: 0;
@@ -221,7 +146,102 @@ footer{
     margin-top: 3px;
 }
 
-.footer-div{
+&__div{
     margin-left: 70px;
 }
 
+}
+
+.black{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+@media screen and (max-width: 479px) {
+    .footer {
+      display: block;
+    }
+    .footer__div{
+        margin-top: 60px;
+        margin-left: 25%;
+        margin-top: -40px;
+        position: absolute;
+      
+        right: 89px;
+     }
+     .footer__list-people{
+        gap:10px;
+     }
+     .footer__h4{
+        margin-left: 30px;
+     }
+     .footer__h6{
+        margin-top: 100px;
+        margin-left: 22%;
+     }
+     .footer{
+        height: 620px;
+     }
+     .footer__article{
+        padding-bottom: 100px;
+     }
+     .footer__logo{
+        margin-left: 115px;
+     }
+     .footer__h3{
+        margin-left: 76px;
+     }
+     .footer__link{
+        margin-left: 46px;
+     }
+     .footer__button{
+        margin-top: 20px;
+        margin-left: 22%;
+     }
+
+
+  }
+@media screen and (min-width:480px ) and (max-width:768px) {
+    .footer {
+        display: block;
+      }
+      .footer__div{
+          margin-top: 60px;
+          margin-left: 25%;
+          margin-top: -230px;
+          width: 10;
+          position: absolute;
+          left: 0px;
+       }
+       .footer__list-people{
+          gap:10px;
+       }
+       .footer__h4{
+          margin-left: 20%;
+       }
+       .footer__h6{
+          margin-top: 100px;
+          margin-left: 22%;
+       }
+       .footer{
+          height: 620px;
+       }
+       .footer__article{
+          padding-bottom: 100px;
+       }
+       .footer__logo{
+          margin-left: 18%;
+       }
+       .footer__h3{
+          margin-left: 20%;
+       }
+       .footer__link{
+          margin-left: 30%;
+       }
+       .footer__button{
+          margin-top: 20px;
+          margin-left: 22%;
+       }
+  
+  
+}
