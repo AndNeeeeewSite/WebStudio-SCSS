@@ -354,17 +354,20 @@ legend {
     padding-bottom: 100px;
   }
   .footer__logo {
-    margin-left: 115px;
+    margin-left: 45px;
   }
   .footer__h3 {
-    margin-left: 76px;
+    margin-left: 56px;
   }
   .footer__link {
-    margin-left: 46px;
+    margin-left: 90px;
   }
   .footer__button {
     margin-top: 20px;
-    margin-left: 22%;
+    margin-left: 50%;
+  }
+  .footer__input {
+    width: 320px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -377,7 +380,7 @@ legend {
     margin-top: -230px;
     width: 10;
     position: absolute;
-    left: 0px;
+    right: 89px;
   }
   .footer__list-people {
     gap: 10px;
@@ -387,7 +390,7 @@ legend {
   }
   .footer__h6 {
     margin-top: 100px;
-    margin-left: 22%;
+    margin-left: 250px;
   }
   .footer {
     height: 620px;
@@ -396,17 +399,22 @@ legend {
     padding-bottom: 100px;
   }
   .footer__logo {
-    margin-left: 18%;
+    margin-left: 65px;
+    margin-bottom: 20px;
   }
   .footer__h3 {
-    margin-left: 20%;
+    margin-top: 20px;
+    margin-left: 76px;
   }
   .footer__link {
-    margin-left: 30%;
+    margin-left: 115px;
   }
   .footer__button {
     margin-top: 20px;
-    margin-left: 22%;
+    margin-left: 250px;
+  }
+  .footer__input {
+    margin-left: 166px;
   }
 }
 .astronaut::before, .diagrama::before, .clock::before, .antenna::before {
