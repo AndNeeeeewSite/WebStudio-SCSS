@@ -2,7 +2,11 @@
 
 
 @import "../base/variables.scss";
+.second-header{
+    position: absolute;
+    left: -100000000000000000000000000px;
 
+}
 .header{
     font-family: 'Roboto', sans-serif;
     font-family: Roboto;
@@ -13,6 +17,7 @@
     letter-spacing: 0.48px;
     margin-bottom: 100px;
 
+    
 
 &__logo{
    font-family: Roboto;
@@ -107,6 +112,49 @@
 }
 
 
+@media screen and (max-width: 479px) {
+    .header__logo{
+
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+    margin-top: 0px;
+    }
+    .header__list{
+        position: absolute;
+        left: -10000000000000000000000000000000px;
+    }
+    .header__list-info{
+        position: absolute;
+        left: -10000000000000000000000000000000px;
+    }
+
+    .second-header{
+        position: relative;
+        left: 0px;
+        margin-left: 50%;
+    }
+    .mobile-menu{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 10000;
+        background-color: white;
+        transform:  translateX(100%);
+
+        &.is-open{
+            transform: translateX(0%);
+        }
+    }
+    
+  }
+@media screen and (min-width:480px ) and (max-width:768px) {
+ 
+      
+}
 
 
 

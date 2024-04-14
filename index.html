@@ -19,9 +19,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-norma
 </head>
 
 <body >
-	<header class="header container"> 
+	<header class="header container">
+		 
 		<div class="header__div"> 
 	<a  class="header__logo" href="index.html"><span style="color: #2196F3;">Web</span>Studio</a>
+	<button class="second-header menu-toggle js-open-menu"
+	aria-expanded="false"
+	aria-controls="mobile-menu">
+		<svg
+		 xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" fill="black"/>
+		</svg>
+	</button>
 	<nav class="header__navigation">
 		<ul  class="header__list">
 			<li class="header__item">
@@ -47,7 +56,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-norma
 		</li>
 		</ul>
 		</div>
-	</header>
+	</header >
 	<main class="galery">
 		<ul class="galery__head ">
 		<h1 class="galery__h1">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
@@ -90,15 +99,26 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-norma
 	<div><h2 class="galery__h2-app">Чим ми займаємося</h2></div>
 	<ul class="galery__list" style="list-style-type: none;">
 		<li class="galery__item">
-			<img class="galery__image" src="img/work-computer-algoritm.jpg">
+			<picture>
+				<source srcset="./img/work-computer-algoritm-desktop@1x.jpg 1x, ./img/work-computer-algoritm-desktop@2x.jpg 2x" media="(min-width:1200px)"/>
+				<img class="galery__image" src="./img/work-computer-algoritm-desktop@1x.jpg">
+			</picture>
+			
 			<h6 class="galery__h6 desktop-app">Десктопні додатки</h6>
 		</li>
 		<li class="galery__item">
-			<img class="galery__image " src="img/work-phone-computer.jpg">
+			<picture>
+				<source srcset="./img/work-phone-computer-desktop@1x.jpg 1x, ./img/work-phone-computer-desktop@2x.jpg 2x" media="(min-width:1200px)"/>
+					<img class="galery__image " src="./img/work-phone-computer-desktop@1x.jpg">
+			</picture>
+		
 			<h6 class="galery__h6 mobile-app">Мобільні додатки</h6>
 		</li>
 		<li class="galery__item">
-			<img class="galery__image" src="img/work-tablet.jpg">
+			<picture>
+				<source srcset="./img/work-tablet-desktop@1x.jpg 1x, ./img/work-tablet-desktop@2x.jpg 2x" media="(min-width:1200px)"/>
+					<img class="galery__image " src="./img/work-tablet-desktop@1x.jpg">
+			</picture>
 			<h6 class="galery__h6 desing-app">Дизайнерські рішення</h6>
 		</li>
 	</ul>
@@ -106,7 +126,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-norma
 <h2 class="galery__h2-people">Наша команда</h2>
 <ul class="galery__list" style="list-style-type: none;">
 					<li class="galery__item-people">
-						<img class="galery__image" src="img/people-product.jpg" width="260" height="270"></img>
+						<picture>
+							<source srcset="./img/people-product-desktop@1x.jpg 1x, ./img/people-product-desktop@2x.jpg 2x" media="(min-width:1200px)"/>
+								<img class="galery__image " src="./img/people-product-desktop@1x.jpg">
+						</picture>
 						<br>
 						<h3 class="galery__h3">Ігор Дем'яненко</h3>
 						<br>
@@ -135,7 +158,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-norma
 						</ul>
 					</li>
 					<li class="galery__item-people">
-						<img class="galery__image" src="img/people-frontend.jpg" width="260" height="270"></img>
+						<picture>
+							<source srcset="./img/people-frontend-desktop@1x.jpg 1x, ./img/people-frontend-desktop@2x.jpg 2x" media="(min-width:1200px)"/>
+								<img class="galery__image " src="./img/people-frontend-desktop@1x.jpg">
+						</picture>
 						<br>
 						
 						<h3 class="galery__h3">Ольга Рєпіна</h3>
@@ -144,6 +170,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-norma
 						<ul class="galery__list-people">
 							<li class="galery__item-people-img instagram__item">
 								<a class="galery__a-people" href="/">
+									
 								<img class="galery__img-people instagram" src="./img/instagram.svg" alt="">
 								</a>
 							</li>
@@ -165,7 +192,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-norma
 						</ul>
 					</li>
 					<li class="galery__item-people">
-						<img class="galery__image" src="img/people-marketing.jpg" width="260" height="270"></img>
+						<picture>
+							<source srcset="./img/people-marketing-desktop@1x.jpg 1x, ./img/people-marketing-desktop@2x.jpg 2x" media="(min-width:1200px)"/>
+								<img class="galery__image" src="./img/people-marketing-desktop@1x.jpg">
+						</picture>
 						<br>
 						<h3 class="galery__h3">Микола Тарасов</h3>
 						<br>
@@ -173,6 +203,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-norma
 						<ul class="galery__list-people">
 							<li class="galery__item-people-img instagram__item">
 								<a class="galery__a-people" href="/">
+									
 								<img class="galery__img-people instagram" src="./img/instagram.svg" alt="">
 								</a>
 							</li>
@@ -193,7 +224,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-norma
 						</ul>
 					</li>
 						<li class="galery__item-people">
-						<img class="galery__image" src="img/people-ui.jpg" width="260" height="270"></img>
+							<picture>
+								<source srcset="./img/people-ui-desktop@1x.jpg 1x, ./img/people-ui-desktop@2x.jpg 2x" media="(min-width:1200px)"/>
+									<img class="galery__image" src="./img/people-ui-desktop@1x.jpg">
+							</picture>
 						<br>
 						<h3 class="galery__h3">Михайло Єрмаков</h3>
 						<br>
@@ -299,8 +333,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-norma
 			<button class="footer__button">Підписатися<img class="footer-button-img" src="./img/tg-icon.svg" alt=""></button>
 			</div>
 		</footer>
+		<div class="mobile-menu js-menu-container "  id="mobile-menu" >
+			<ul><li><h2>Text</h2></li></ul>
+		</div>
 
 	<script src="./js/modal.js"></script>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 

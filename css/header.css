@@ -1,3 +1,8 @@
+.second-header {
+  position: absolute;
+  left: -100000000000000000000000000px;
+}
+
 .header {
   font-family: "Roboto", sans-serif;
   font-family: Roboto;
@@ -82,4 +87,27 @@
 
 .studio-portfolio:hover {
   color: #188CE8;
+}
+
+@media screen and (max-width: 479px) {
+  .header__logo {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+    margin-top: 0px;
+  }
+  .header__list {
+    position: absolute;
+    left: -10000000000000000000000000000000px;
+  }
+  .header__list-info {
+    position: absolute;
+    left: -10000000000000000000000000000000px;
+  }
+  .second-header {
+    position: relative;
+    left: 0px;
+    margin-left: 50%;
+  }
 }

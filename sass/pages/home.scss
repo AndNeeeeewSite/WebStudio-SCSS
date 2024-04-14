@@ -40,6 +40,7 @@ color: #188CE8;
         line-height: 24px; /* 171.429% */
         letter-spacing: 0.42px;
     }
+    
 
     &__h3:nth-of-type(2n){
         font-family: 'Roboto', sans-serif;
@@ -690,8 +691,8 @@ content: url('../img/astronaut.svg');
       display: block;
     }
     .astronaut::before, .diagrama::before, .clock::before, .antenna::before {
-      padding-left: 190px;
-      padding-right: 190px;
+      padding-left: 41%;
+      padding-right: 41%;
     }
     .galery__head {
       background-position: -130px -10px;
@@ -742,20 +743,24 @@ content: url('../img/astronaut.svg');
       margin-top: 60px;
     }
     .galery__item-people {
-      width: 450px;
+      width: 90%;
       margin-left: 15px;
       padding-bottom: 24px;
       margin-bottom: 30px;
     }
+    .galery__item-people{
+      width: 93%;
+    }
     .galery__image {
-      width: 450px;
-      height: 460px;
+      width: 100%;
     }
     .galery__list-people {
       margin-top: 16px;
       display: flex;
       justify-content: center;
+      margin-left: 0px;
     }
+
     .galery__img-clients {
       width: 44px;
       height: 49px;

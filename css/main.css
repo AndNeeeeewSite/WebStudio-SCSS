@@ -106,6 +106,11 @@ legend {
   display: block;
 }
 
+.second-header {
+  position: absolute;
+  left: -100000000000000000000000000px;
+}
+
 .header {
   font-family: "Roboto", sans-serif;
   font-family: Roboto;
@@ -192,6 +197,28 @@ legend {
   color: #188CE8;
 }
 
+@media screen and (max-width: 479px) {
+  .header__logo {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+    margin-top: 0px;
+  }
+  .header__list {
+    position: absolute;
+    left: -10000000000000000000000000000000px;
+  }
+  .header__list-info {
+    position: absolute;
+    left: -10000000000000000000000000000000px;
+  }
+  .second-header {
+    position: relative;
+    left: 0px;
+    margin-left: 50%;
+  }
+}
 .footer {
   margin-top: 94px;
   font-family: Roboto;
@@ -364,7 +391,7 @@ legend {
   }
   .footer__button {
     margin-top: 20px;
-    margin-left: 50%;
+    margin-left: 50px;
   }
   .footer__input {
     width: 320px;
@@ -1009,8 +1036,8 @@ legend {
     display: block;
   }
   .astronaut::before, .diagrama::before, .clock::before, .antenna::before {
-    padding-left: 190px;
-    padding-right: 190px;
+    padding-left: 41%;
+    padding-right: 41%;
   }
   .galery__head {
     background-position: -130px -10px;
@@ -1061,19 +1088,22 @@ legend {
     margin-top: 60px;
   }
   .galery__item-people {
-    width: 450px;
+    width: 90%;
     margin-left: 15px;
     padding-bottom: 24px;
     margin-bottom: 30px;
   }
+  .galery__item-people {
+    width: 93%;
+  }
   .galery__image {
-    width: 450px;
-    height: 460px;
+    width: 100%;
   }
   .galery__list-people {
     margin-top: 16px;
     display: flex;
     justify-content: center;
+    margin-left: 0px;
   }
   .galery__img-clients {
     width: 44px;
