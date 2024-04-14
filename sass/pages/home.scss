@@ -698,6 +698,7 @@ content: url('../img/astronaut.svg');
       background-position: -130px -10px;
       background-size: 1000px 400px;
       margin-left: 0px;
+      margin-top: 0px
     }
     .galery__button {
       margin-bottom: 0px;
@@ -776,6 +777,27 @@ content: url('../img/astronaut.svg');
     .galery__clients-h5{
       margin-top:90px;
     }
+    .galery__list__item-clients{
+      outline: 1px solid #AFB1B8;
+       padding-top: 25px;
+      padding-bottom: 25px;
+  
+
+      border-radius: 4px;
+    }
+  .galery__img-clients {
+    width: 79px;
+    height: 42px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 35px;
+    margin-right: 35px;
+    outline: 0px solid #AFB1B8;
+   
+    
+}
   }
 
 @media screen and (min-width:480px ) and (max-width:768px) {
@@ -786,12 +808,12 @@ content: url('../img/astronaut.svg');
           grid-template-columns: auto auto;
         }
         .astronaut::before, .diagrama::before, .clock::before, .antenna::before {
-          padding-left: 142px;
-          padding-right: 142px;
+          padding-left:36%;
+          padding-right: 36%;
         }
         .galery__head {
-          background-position: -130px -10px;
-          background-size: 1000px 400px;
+          background-position:  -10px;
+          background-size: 100% 400px;
           margin-left: 0px;
           margin-bottom: 60px;
         }
@@ -816,6 +838,7 @@ content: url('../img/astronaut.svg');
           display: block;
           margin-left: 0px;
         }
+        
         .galery__h4 {
           margin-top: 30px;
           margin-bottom:10px;
@@ -853,7 +876,7 @@ content: url('../img/astronaut.svg');
         }
         .galery__image {
           width: 354px;
-          height: 374px;
+          height: 350px;
         }
         .galery__list-people {
           margin-top: 16px;
@@ -875,7 +898,32 @@ content: url('../img/astronaut.svg');
         .galery__head {
 
           background-size: 100%;
-      
+          
         }
-      
+        .galery__h4{
+          width: 200px;
+
+        }
+        .galery__paragraph{
+          width: 329px;
+        }
+        .galery__list__item-clients{
+          outline: 1px solid #AFB1B8;
+           padding-top: 16px;
+          padding-bottom: 16px;
+          padding-left: 60px;
+          padding-right: 60px;
+          border-radius: 4px;
+        }
+      .galery__img-clients {
+        width: 106px;
+        height: 60px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        outline: 0px solid #AFB1B8;
+       
+        
+    }
   }

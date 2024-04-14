@@ -23,7 +23,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-norma
 		 
 		<div class="header__div"> 
 	<a  class="header__logo" href="index.html"><span style="color: #2196F3;">Web</span>Studio</a>
-	<button class="second-header menu-toggle js-open-menu"
+	<button
+	class="second-header__menu menu-toggle js-open-menu"
 	aria-expanded="false"
 	aria-controls="mobile-menu">
 		<svg
@@ -334,10 +335,39 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-norma
 			</div>
 		</footer>
 		<div class="mobile-menu js-menu-container "  id="mobile-menu" >
-			<ul><li><h2>Text</h2></li></ul>
+			<button
+	class="second-footer__menu menu-toggle js-close-menu"
+	aria-expanded="false"
+	aria-controls="mobile-menu">
+	<svg  xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+		<path class="svg-img-button" d="M18.6667 1.88L16.7867 0L9.33333 7.45334L1.88 0L0 1.88L7.45334 9.33333L0 16.7867L1.88 18.6667L9.33333 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33333L18.6667 1.88Z" fill="#212121"/>
+		</svg>
+	</button>
+			<ul class="mobile__list">
+				<li class="mobile__item"><a href="./index.html" class="mobile__link">Студія</a></li>
+				<li class="mobile__item"><a href="./portfolio.html" class="mobile__link">Портфоліо</a></li>
+				<li class="mobile__item"><a class="mobile__link">Контакти</a></li>
+			</ul>
+			<ul class="mobile__list-info">
+				<li class="mobile__item-info"><a class="mobile__link-info mobile-number">+38 096 111 11 11</a></li>
+				<li class="mobile__item-info"><a class="mobile__link-info mobile-e-mail">info@devstudio.com</a></li>
+			</ul>
+			<ul class="mobile__list-social">
+				<li class="mobile__item-social"><a class="mobile__link-social">Instagram</a></li>
+				<li class="mobile__item-social"><a class="mobile__link-social ">Twitter</a></li>
+				<li class="mobile__item-social"><a class="mobile__link-social ">Facebook</a></li>
+				<li class="mobile__item-social"><a class="mobile__link-social ">LinkedIn</a></li>
+				
+			</ul>
 		</div>
 
 	<script src="./js/modal.js"></script>
+	<script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+></script>
 	<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

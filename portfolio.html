@@ -21,19 +21,29 @@
     <title>Portfolio</title>
 </head><body class="">
 	<main>
-		<header class="header container"> 
+		<header class="header container">
+		 
 			<div class="header__div"> 
 		<a  class="header__logo" href="index.html"><span style="color: #2196F3;">Web</span>Studio</a>
+		<button
+		class="second-header__menu menu-toggle js-open-menu"
+		aria-expanded="false"
+		aria-controls="mobile-menu">
+			<svg
+			 xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" fill="black"/>
+			</svg>
+		</button>
 		<nav class="header__navigation">
 			<ul  class="header__list">
 				<li class="header__item">
-				<a	class="header-link studio-portfolio" href="index.html"> Студія</a>
+				<a	class="header-link studio-studio" href="index.html"> Студія</a>
 				</li> 
 				<li class="header__item">
-				<a  class="header__link portfolio-portfolio" href="portfolio.html">Портфоліо</a>
+				<a  class="header__link portfolio-studio" href="portfolio.html">Портфоліо</a>
 			</li>
 				<li class="header__item">
-					<a  class="header__link contactu-portfolio" href="">Контакти</a>
+					<a  class="header__link contactu-studio" href="">Контакти</a>
 				</li>
 			</ul>
 			
@@ -49,7 +59,7 @@
 			</li>
 			</ul>
 			</div>
-		</header>
+		</header >
 
 	<nav class="portfolio__galary-navigation portfolio-container">
 		<ul class="portfolio__galery-list-buttons" style="list-style-type: none;">
@@ -295,7 +305,40 @@
 	<button class="footer__button">Підписатися<img class="footer-button-img" src="./img/tg-icon.svg" alt=""></button>
 	</div>
 </footer>
+<div class="mobile-menu js-menu-container "  id="mobile-menu" >
+	<button
+class="second-footer__menu menu-toggle js-close-menu"
+aria-expanded="false"
+aria-controls="mobile-menu">
+<svg  xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+<path class="svg-img-button" d="M18.6667 1.88L16.7867 0L9.33333 7.45334L1.88 0L0 1.88L7.45334 9.33333L0 16.7867L1.88 18.6667L9.33333 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33333L18.6667 1.88Z" fill="#212121"/>
+</svg>
+</button>
+	<ul class="mobile__list">
+		<li class="mobile__item"><a href="./index.html" class="mobile__link">Студія</a></li>
+		<li class="mobile__item"><a href="./portfolio.html" class="mobile__link">Портфоліо</a></li>
+		<li class="mobile__item"><a class="mobile__link">Контакти</a></li>
+	</ul>
+	<ul class="mobile__list-info">
+		<li class="mobile__item-info"><a class="mobile__link-info mobile-number">+38 096 111 11 11</a></li>
+		<li class="mobile__item-info"><a class="mobile__link-info mobile-e-mail">info@devstudio.com</a></li>
+	</ul>
+	<ul class="mobile__list-social">
+		<li class="mobile__item-social"><a class="mobile__link-social">Instagram</a></li>
+		<li class="mobile__item-social"><a class="mobile__link-social ">Twitter</a></li>
+		<li class="mobile__item-social"><a class="mobile__link-social ">Facebook</a></li>
+		<li class="mobile__item-social"><a class="mobile__link-social ">LinkedIn</a></li>
+		
+	</ul>
+</div>
 
 	<script src="./js/modal.js"></script>
+	<script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+></script>
+	<script src="./js/mobile-menu.js"></script>
 </body >
 </html>
