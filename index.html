@@ -60,10 +60,46 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-norma
 	</header >
 	<main class="galery">
 		<ul class="galery__head ">
-		<h1 class="galery__h1">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-		<button  class="galery__button" href="#" data-modal-open >
-			Замовити послугу
-			</button>	
+			<h1 class="galery__h1">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+			<button  class="galery__button" href="#" data-modal-open >
+			  Замовити послугу
+			  </button>  
+			<div class="modal__home-backdrop is-hidden" data-modal>
+				<div class="modal__home-modal">
+				  <button class="modal__home-button-close" data-modal-close><img class="header-button-img-close" src="./img/button-close-modal.svg" alt=""></button>
+				  <div class="content">
+					<h2 class="modal__home-h2">Залиште свої дані, ми вам передзвонимо</h2>
+					<form class="modal__home-form">
+					  <ul class="modal__home-list">
+						<li class="modal__home-item name-item">
+						  <h6 class="modal__home-h6 ">Ім'я</h6>
+						  <input type="text" class="modal__home-input-data name">
+						</li>
+						<li class="modal__home-item nomer-item">
+						  <h6 class="modal__home-h6 ">Телефон</h6>
+						  <input type="text" class="modal__home-input-data nomer">
+						</li>
+						<li class="modal__home-item poshta-item">
+						  <h6 class="modal__home-h6 ">Пошта</h6>
+						  <input type="text" class="modal__home-input-data poshta">
+						</li>
+						<li class="modal__home-item com-item">
+						  <h6 class="modal__home-h6 ">Коментар</h6>
+						  <input type="text" class="modal__home-input-com" placeholder="Введіть текст">
+						</li>
+					  </ul>
+					</form>
+					<div class="modal__home-div-doc">
+					  <input type="checkbox" class="modal__home-check">
+					  <h3 class="modal__home-h3">Погоджуюся з розсилкою та приймаю <span><a class="modal__home-a" href="">Умови договору</a></h3></span>
+					  <button  class="modal__home-button">Відправити</button>                
+					</div>
+					
+				  </div>
+					
+				</div>
+			  </div>
+		  </ul>	
 		
 	</ul>
 <section class="galery__section-description ">
